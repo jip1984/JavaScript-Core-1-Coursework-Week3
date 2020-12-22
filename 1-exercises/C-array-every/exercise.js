@@ -6,6 +6,11 @@ var students = ["Omar", "Austine", "Dany", "Swathi", "Lesley", "Rukmini"];
 var group = ["Austine", "Dany", "Swathi", "Daniel"];
 
 var groupIsOnlyStudents; // complete this statement
+  function isStudent (value) {
+    return value in students;
+  }
+  var groupIsOnlyStudents = group.every(isStudent);
+
 
 if (groupIsOnlyStudents) {
   console.log("The group contains only students");

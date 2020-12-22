@@ -11,7 +11,9 @@
     Some string methods that might help you here are .replace() and .substring(). 
 */
 
-function safeLevels() {}
+function safeLevels(arr) {
+  return arr.find(i => parseFloat(i) > 19.5 && parseFloat(i) < 23.5);
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
